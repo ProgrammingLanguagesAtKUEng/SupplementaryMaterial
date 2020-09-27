@@ -18,7 +18,7 @@ jobs:
   include:
     - language: java
       script:
-        - make -C java build
+        - make -C Java build
     - language: c
       cache:
         directories:
@@ -28,4 +28,4 @@ jobs:
         - opam install -y ounit2
         - eval $(opam env)
       script:
-        - make -C ocaml build
+        - make -C OCaml build
