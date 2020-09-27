@@ -1,0 +1,31 @@
+dist: bionic
+addons:
+  apt:
+    sources:
+      #- avsm
+      - sourceline: 'ppa:avsm/ppa'
+    packages:
+      - opam
+
+env:
+  global:
+    - OCAML_VERSION=4.09.0
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - language: java
+      script:
+        - make -C java build
+    - language: c
+      cache:
+        directories:
+          - $HOME/.opam
+      install:
+        - opam init -y -n --disable-sandboxing --comp $OCAML_VERSION
+        - opam install -y ounit2
+        - eval $(opam env)
+      script:
+        - make -C ocaml build

@@ -1,0 +1,15 @@
+*~
+*.aux
+*.bbl
+*.blg
+*.class
+*.cmo
+*.cmx
+*.cmi
+*.ctxt
+*.dvi
+*.log
+*.out
+
+# BlueJ files
+*.ctxt
