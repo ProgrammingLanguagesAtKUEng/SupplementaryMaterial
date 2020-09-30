@@ -4,18 +4,18 @@
  * @author Atsushi Igarashi
  * @version 20200106
  */
-public class IsBranch implements BSTVisitorB {
-    /**
-     * Constructor for objects of class IsBranch
-     */
-    public IsBranch() {
-    }
+public class IsBranch implements BSTVisitor<Boolean> {
+	/**
+	 * Constructor for objects of class IsBranch
+	 */
+	public IsBranch() {
+	}
 
-    public boolean caseLeaf() {
-        return false;
-    }
+	public Boolean caseLeaf() {
+		return false;
+	}
 
-    public boolean caseBranch(BinarySearchTree left, int v, BinarySearchTree right) {
-        return true;
-    }
+	public Boolean caseBranch(BinarySearchTree left, int v, BinarySearchTree right) {
+		return true;
+	}
 }
