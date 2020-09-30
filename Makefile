@@ -1,12 +1,9 @@
 CURRENT_DIR=$(shell pwd)
 
-java: java/*
+java_example: java/*
 	@for f in $(shell ls java/);\
 	do (\
 		cd "java/$${f}";\
 		echo "=== testing $${f} ===";\
-		 javac *.java; java -cp . Main);\
+		make);\
 	done
-
-ocaml: ocaml/*
-	

@@ -19,8 +19,8 @@ jobs:
   include:
     - language: java
       script:
-        # - make -C Java build
-        - make java
+        # - make -C java build
+        - make java_example
     - language: c
       cache:
         directories:
