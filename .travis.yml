@@ -3,7 +3,7 @@ addons:
   apt:
     sources:
       #- avsm
-      - sourceline: 'ppa:avsm/ppa'
+      - sourceline: "ppa:avsm/ppa"
     packages:
       - opam
 
@@ -13,12 +13,14 @@ env:
 branches:
   only:
     - master
+    - travis_java
 
 jobs:
   include:
     - language: java
       script:
-        - make -C Java build
+        # - make -C Java build
+        - make java
     - language: c
       cache:
         directories:
