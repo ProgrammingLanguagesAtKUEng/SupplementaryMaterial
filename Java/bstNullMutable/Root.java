@@ -3,7 +3,6 @@
  *
  * @author Atsushi Igarashi
  * @version 20160825
- *
  */
 public class Root {
     private BinarySearchTree root;

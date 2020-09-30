@@ -1,8 +1,6 @@
 /**
- * 
  * @author Atsushi Igarashi
  * @version 20170117
- * 
  */
 public class Branch implements Tree {
     // instance variables to hold an element of type Elm and subtrees
@@ -22,8 +20,8 @@ public class Branch implements Tree {
     /**
      * A method to transform each value by function f
      *
-     * @param f     function to transform integers held at branches 
-     * @return      a new tree obtained by applying f to values
+     * @param f function to transform integers held at branches
+     * @return a new tree obtained by applying f to values
      */
     public Tree map(IntToInt f) {
         Tree newLeft = left.map(f);
@@ -35,20 +33,20 @@ public class Branch implements Tree {
     /**
      * A method for folding a tree with two operators
      *
-     * @param r  represents how leaves and branches are replaced
-     * @return  an integer
+     * @param r represents how leaves and branches are replaced
+     * @return an integer
      */
     public int fold(int e, ThreeIntsToInt f) {
         int l = left.fold(e, f);
         int r = right.fold(e, f);
         return f.apply(l, v, r);
     }
-    
+
     /**
      * Another method for folding a tree with one object
      *
-     * @param c  represents a pair of functions
-     * @return   an integer
+     * @param c represents a pair of functions
+     * @return an integer
      */
     public int fold(CaseForTree c) {
         int l = left.fold(c);
@@ -59,7 +57,7 @@ public class Branch implements Tree {
     /**
      * A method to convert to a string
      *
-     * @return      the string representation of a tree
+     * @return the string representation of a tree
      */
     public String toString() {
         return "branch(" + left + ", " + v + ", " + right + ")";

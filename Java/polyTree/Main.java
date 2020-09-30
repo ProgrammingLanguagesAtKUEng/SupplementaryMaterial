@@ -1,19 +1,20 @@
 /**
  * Write a description of class Main here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20170105
  */
+
 import java.util.function.*;
 
 public class Main {
     public static void main(String[] args) {
         Tree<Integer> t1 = new Branch<Integer>(new Leaf<Integer>(),
-                                               new Integer(10),
-                                               new Leaf<Integer>());
+                new Integer(10),
+                new Leaf<Integer>());
         Tree<Integer> t2 = new Branch<Integer>(new Leaf<Integer>(),
-                                               new Integer(25),
-                                               new Leaf<Integer>());
+                new Integer(25),
+                new Leaf<Integer>());
         // Actually, auto boxing allows you to omit "new Integer()"
         Tree<Integer> t3 = new Branch<Integer>(t1, 15, t2);
         Tree<Integer> t4 = new Branch<Integer>(new Leaf<Integer>(), 60, new Leaf<Integer>());
@@ -36,11 +37,11 @@ public class Main {
 
         // Let's construct a tree holding strings
         Tree<String> t11 = new Branch<String>(new Leaf<String>(),
-                                              "I",
-                                              new Leaf<String>());
+                "I",
+                new Leaf<String>());
         Tree<String> t12 = new Branch<String>(new Leaf<String>(),
-                                              "Love",
-                                              new Leaf<String>());
+                "Love",
+                new Leaf<String>());
         Tree<String> t13 = new Branch<String>(t11, "Java", t12);
         Tree<String> t14 = new Branch<String>(new Leaf<String>(), "How", new Leaf<String>());
         Tree<String> t15 = new Branch<String>(new Leaf<String>(), "about", t14);
@@ -61,15 +62,15 @@ public class Main {
         System.out.println("The depth of t18 is " + t18.depth());
 
         // polymorphic map and fold
-        TriFunction<Integer,String,Integer,Integer> f = (l, v, r) -> l + v.length() + r;
+        TriFunction<Integer, String, Integer, Integer> f = (l, v, r) -> l + v.length() + r;
         // Computes the sum of the lengths of the strings in t18
-        Integer i = t18.<Integer>fold(0, f);  
+        Integer i = t18.<Integer>fold(0, f);
         // "<Integer>" above specifies what Res is in this invocation
         // It can be omitted and written t18.fold(0, f) -- type inference!
-        System.out.println(i);  
+        System.out.println(i);
 
         Tree<Integer> t9 = t18.<Integer>map(s -> s.length());
         System.out.println(t9);
-        System.out.println(t9.fold(0, (l,v,r) -> l + v + r));
+        System.out.println(t9.fold(0, (l, v, r) -> l + v + r));
     }
 }

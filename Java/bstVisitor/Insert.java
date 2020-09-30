@@ -1,6 +1,6 @@
 /**
  * Write a description of class Insert here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20160912
  */
@@ -11,7 +11,7 @@ public class Insert implements BSTVisitorBST {
      * Constructor for objects of class Insert
      */
     public Insert(int n) {
-    // initialise instance variables
+        // initialise instance variables
         this.n = n;
     }
 

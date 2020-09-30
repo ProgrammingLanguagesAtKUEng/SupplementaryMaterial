@@ -1,6 +1,6 @@
 /**
  * Write a description of class IsBranch here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200103
  */

@@ -1,20 +1,20 @@
 /**
  * Write a description of class Main here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20160824
  */
 public class Main {
     public static void main(String[] args) {
         BinarySearchTree<Integer> t1 =
-            new Branch<Integer>(new Leaf<Integer>(), 10, new Leaf<Integer>());
+                new Branch<Integer>(new Leaf<Integer>(), 10, new Leaf<Integer>());
         BinarySearchTree<Integer> t2 =
-            new Branch<Integer>(new Leaf<Integer>(), 25, new Leaf<Integer>());
+                new Branch<Integer>(new Leaf<Integer>(), 25, new Leaf<Integer>());
         BinarySearchTree<Integer> t3 = new Branch<Integer>(t1, 15, t2);
         BinarySearchTree<Integer> t4 =
-            new Branch<Integer>(new Leaf<Integer>(), 60, new Leaf<Integer>());
+                new Branch<Integer>(new Leaf<Integer>(), 60, new Leaf<Integer>());
         BinarySearchTree<Integer> t5 =
-            new Branch<Integer>(new Leaf<Integer>(), 48, t4);
+                new Branch<Integer>(new Leaf<Integer>(), 48, t4);
         BinarySearchTree<Integer> t6 = new Branch<Integer>(t3, 30, t5);
         boolean test1 = t6.find(30);  // should be true
         boolean test2 = t6.find(13);  // should be false
@@ -35,14 +35,14 @@ public class Main {
         System.out.println("test 7: " + test7);
 
         BinarySearchTree<String> t11 =
-            new Branch<String>(new Leaf<String>(), "I", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "I", new Leaf<String>());
         BinarySearchTree<String> t12 =
-            new Branch<String>(new Leaf<String>(), "love", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "love", new Leaf<String>());
         BinarySearchTree<String> t13 = new Branch<String>(t11, "OCaml", t12);
         BinarySearchTree<String> t14 =
-            new Branch<String>(new Leaf<String>(), "you", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "you", new Leaf<String>());
         BinarySearchTree<String> t15 =
-            new Branch<String>(new Leaf<String>(), "think", t14);
+                new Branch<String>(new Leaf<String>(), "think", t14);
         BinarySearchTree<String> t16 = new Branch<String>(t13, "so?", t15);
         boolean test11 = t16.find("so?");  // should be true
         boolean test12 = t16.find("Ocaml");  // should be false

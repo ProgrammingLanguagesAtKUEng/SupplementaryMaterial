@@ -1,6 +1,6 @@
 /**
  * Write a description of class Main here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200103
  */
@@ -31,14 +31,14 @@ public class Main {
         System.out.println("test 7: " + test7);
 
         BinarySearchTree<String> t11 =
-            new Branch<String>(new Leaf<String>(), "I", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "I", new Leaf<String>());
         BinarySearchTree<String> t12 =
-            new Branch<String>(new Leaf<String>(), "love", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "love", new Leaf<String>());
         BinarySearchTree<String> t13 = new Branch<String>(t11, "OCaml", t12);
         BinarySearchTree<String> t14 =
-            new Branch<String>(new Leaf<String>(), "you", new Leaf<String>());
+                new Branch<String>(new Leaf<String>(), "you", new Leaf<String>());
         BinarySearchTree<String> t15 =
-            new Branch<String>(new Leaf<String>(), "think", t14);
+                new Branch<String>(new Leaf<String>(), "think", t14);
         BinarySearchTree<String> t16 = new Branch<String>(t13, "so?", t15);
         Boolean test11 = t16.accept(new Find<String>("so?"));  // should be true
         Boolean test12 = t16.accept(new Find<String>("Ocaml"));  // should be false

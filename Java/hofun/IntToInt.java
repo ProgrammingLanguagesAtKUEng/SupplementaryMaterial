@@ -3,7 +3,6 @@
  *
  * @author Atsushi Igarashi
  * @version 20170117
- *
  */
 public interface IntToInt {
     /**

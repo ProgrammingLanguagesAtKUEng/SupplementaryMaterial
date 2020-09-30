@@ -3,7 +3,6 @@
  *
  * @author Atsushi Igarashi
  * @version 20170117
- *
  */
 public class Dbl implements IntToInt {
     // no instance variables
@@ -18,5 +17,7 @@ public class Dbl implements IntToInt {
      * @param n an integer
      * @return n * 2
      */
-    public int apply(int n) { return n * 2; }
+    public int apply(int n) {
+        return n * 2;
+    }
 }

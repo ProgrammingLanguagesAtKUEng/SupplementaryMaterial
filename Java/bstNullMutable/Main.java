@@ -1,6 +1,6 @@
 /**
  * Write a description of class Main here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20160826
  */
