@@ -5,7 +5,7 @@ EXAMPLE_DIRS=$(shell ls -d Java/*)
 java_example: $(foreach dir,$(EXAMPLE_DIRS),${dir}/Main.class)
 	@echo "=== finished. ==="
 
-%/Main.class: %/*.java %/**/*.java
+%/Main.class: $(wildcard %/*.java) $(wildcard %/**/*.java)
 	@echo "=== running $* ==="
 	@javac $^
 	@java -cp $* Main
