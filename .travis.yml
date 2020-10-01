@@ -19,7 +19,7 @@ jobs:
   include:
     - language: java
       script:
-        - make java_example
+        - make java_run
     - language: c
       cache:
         directories:
