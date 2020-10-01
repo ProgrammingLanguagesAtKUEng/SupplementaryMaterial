@@ -1,7 +1,7 @@
 CURRENT_DIR=$(shell pwd)
 
-java_example: $(wildcard java/*)
-	@for f in $(shell ls -d java/*/);\
+java_example: $(wildcard Java/*)
+	@for f in $(shell ls -d Java/*/);\
 	do (\
 		cd "$${f}";\
 		echo "=== testing $${f} ===";\
