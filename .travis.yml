@@ -19,6 +19,7 @@ jobs:
   include:
     - language: java
       script:
+        - sudo apt upgrade -y -q make
         - make java_example
     - language: c
       cache:

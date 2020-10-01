@@ -7,7 +7,7 @@ java_example: $(foreach dir,$(EXAMPLE_DIRS),${dir}/Main.class)
 
 %/Main.class: %/*.java %/**/*.java
 	@echo "=== running $* ==="
-	@javac  $^
+	@javac $^
 	@java -cp $* Main
 
 .PHONY: clean
