@@ -27,7 +27,7 @@ jobs:
           - $HOME/.opam
       install:
         - opam init -y -n --disable-sandboxing --comp $OCAML_VERSION
-        - opam install -y ounit2
+        - opam install -y ounit
         - eval $(opam env)
       script:
         - make ocaml_run
