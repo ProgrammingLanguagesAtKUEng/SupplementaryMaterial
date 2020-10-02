@@ -5,4 +5,5 @@ build:
 
 .PHONY: run
 run:
-	dune exec ./main.exe
+	@dune exec ./main.exe
+	@echo "=== finished. ==="

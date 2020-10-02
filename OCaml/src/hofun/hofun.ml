@@ -78,11 +78,3 @@ let str7 =
   treefold "leaf"
     (fun l v r -> "branch(" ^ l ^ ", " ^ string_of_int v ^ ", " ^ r ^ ")")
     t7
-
-let print_var varname var = varname ^ ":\t" ^ var |> print_endline
-
-let () =
-  let _ = print_var "g1" g1 in
-  let _ = print_var "g2" g2 in
-  let _ = print_var "str6" str6 in
-  print_var "str7" str7
