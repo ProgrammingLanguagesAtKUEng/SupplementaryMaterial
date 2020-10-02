@@ -1,6 +1,6 @@
 open Tester
 open Core
-open OUnit
+open OUnit2
 
 let ( = ) = Stdlib.( = )
 
