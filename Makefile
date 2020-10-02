@@ -22,7 +22,7 @@ java_run:
 
 .PHONY: ocaml_run
 ocaml_run: 
-	@(cd ocaml; make run)
+	@(cd OCaml; make run)
 
 .PHONY: clean
 clean:
