@@ -14,10 +14,15 @@ java_build: $(foreach dir,$(EXAMPLE_DIRS),${dir}/Main.java)
 java_run:
 	@make $(foreach name,$(EXAMPLE_NAMES),${name})
 	@echo "finished"
+	
 
 %: Java/%/Main.class
 	@echo "=== Java/$* ===" 
 	@java -cp Java/$* Main
+
+.PHONY: ocaml_run
+ocaml_run: 
+	@(cd ocaml; make run)
 
 .PHONY: clean
 clean:

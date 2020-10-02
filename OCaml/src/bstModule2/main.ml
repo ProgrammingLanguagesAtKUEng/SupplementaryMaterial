@@ -42,4 +42,3 @@ let () =
   print_newline ();
   print_bool test7;
   print_newline ()
-  

@@ -42,7 +42,7 @@ let fold_wo_rec lf br t =
 let rec find2(t, n) =
   fold_wo_rec
     false
-    (fun l v r ->
+    (fun l v _r ->
       if n = v then true
       else if n < v then find2(l, n)
       else find2(l, n))
@@ -69,7 +69,7 @@ let rec find3(t, n) =
               else find3(r, n)}
     t
 
-let find_gen n =
+(* let find_gen n =
   let rec find t = 
     fold_wo_rec
       {caseLf = false;
@@ -78,7 +78,7 @@ let find_gen n =
                 else if n < v then find l
                 else find r}
       t
-  in find
+  in find *)
 
 let find_gen n =
   let rec find_visitor =
