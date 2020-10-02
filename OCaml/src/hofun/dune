@@ -1,4 +1,4 @@
-(executable
+(library
  (name hofun)
  (modules hofun)
  (libraries core))
