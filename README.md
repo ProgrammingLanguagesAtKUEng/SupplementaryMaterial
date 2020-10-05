@@ -16,3 +16,16 @@
    ```console
    make polyBSTPolyVisitor
    ```
+
+### OCaml
+
+それぞれの実装は，`OCaml/src/` にあります．`OCaml/main.ml` は，それぞれの実装を呼び出して，テストを定義しています．
+
++ すべての例をビルドしてテストを実行
+   ```console
+   make ocaml_run
+   ```
++ (注) 実行には [ounit2](https://github.com/gildor478/ounit) と [dune](https://github.com/ocaml/dune) が必要です．
+   ```console
+   opam install ounit2 dune
+   ```

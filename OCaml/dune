@@ -1,4 +1,4 @@
 (executable
  (name main)
- (libraries core ounit2 bst bstModule bstModule2 bstMutable hofun polyBST
-   polyTree visitor))
+ (libraries ounit2 bst bstModule bstModule2 bstMutable hofun polyBST polyTree
+   visitor))

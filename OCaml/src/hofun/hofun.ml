@@ -1,5 +1,3 @@
-open Core
-
 (* an example of higher-order functions *)
 let rec sigma (f, n) = if n < 1 then f 0 else f n + sigma (f, n - 1)
 

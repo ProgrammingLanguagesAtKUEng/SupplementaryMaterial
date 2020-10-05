@@ -1,5 +1,4 @@
 open Tester
-open Core
 open OUnit2
 
 let ( = ) = Stdlib.( = )
@@ -44,8 +43,6 @@ let bstmodule_test () =
     { input = find (t6, 30); expected = true };
     { input = find (t6, 13); expected = false };
     { input = find (t7, 23); expected = true };
-    (* ??? *)
-    (* should return false *)
     { input = find (t8, 30); expected = true };
     { input = find (t8, 23); expected = false };
     { input = find (t9, 30); expected = false };
