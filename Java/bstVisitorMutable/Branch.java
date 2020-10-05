@@ -1,6 +1,6 @@
 /**
  * Write a description of class Branch here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20160912
  */
@@ -19,9 +19,11 @@ public class Branch implements BinarySearchTree {
     public BinarySearchTree getLeft() {
         return left;
     }
+
     public int getV() {
         return v;
     }
+
     public BinarySearchTree getRight() {
         return right;
     }
@@ -30,9 +32,11 @@ public class Branch implements BinarySearchTree {
     public void setLeft(BinarySearchTree newLeft) {
         left = newLeft;
     }
+
     public void setV(int newv) {
         v = newv;
     }
+
     public void setRight(BinarySearchTree newRight) {
         right = newRight;
     }

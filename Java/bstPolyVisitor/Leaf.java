@@ -1,6 +1,6 @@
 /**
  * Write a description of class Leaf here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200106
  */

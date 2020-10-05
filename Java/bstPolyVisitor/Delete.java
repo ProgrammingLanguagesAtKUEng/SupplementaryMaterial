@@ -1,6 +1,6 @@
 /**
  * Write a description of class Insert here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200106
  */

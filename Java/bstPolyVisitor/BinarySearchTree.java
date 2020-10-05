@@ -1,6 +1,6 @@
 /**
  * Write a description of interface BinarySearchTree here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200106
  */

@@ -1,10 +1,9 @@
 /**
  * An interface representing how to process tree nodes in fold by two
  * methods
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20170118
- * 
  */
 public interface CaseForTree {
     /**

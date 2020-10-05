@@ -1,6 +1,6 @@
 /**
  * Write a description of class Min here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20160829
  */

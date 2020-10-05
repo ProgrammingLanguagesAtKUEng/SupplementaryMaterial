@@ -1,6 +1,6 @@
 /**
  * Write a description of class IsLeaf here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200103
  */

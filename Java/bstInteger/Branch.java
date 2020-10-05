@@ -1,6 +1,6 @@
 /**
  * Write a description of class Branch here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20170118
  */
@@ -21,35 +21,43 @@ public class Branch implements BinarySearchTree {
 
     /**
      * A method to ask if the tree is a leaf.
-     * 
-     * @return      whether the tree is a leaf or not
+     *
+     * @return whether the tree is a leaf or not
      */
-    public boolean isLeaf() { return false; }
+    public boolean isLeaf() {
+        return false;
+    }
 
     /**
      * A method to ask if the tree is a branch.
-     * 
-     * @return      whether the tree is a branch or not
+     *
+     * @return whether the tree is a branch or not
      */
-    public boolean isBranch() { return true; }
+    public boolean isBranch() {
+        return true;
+    }
 
     /**
      * A method to find the given number in a BST.
-     * 
-     * @param  n    the number to be searched for
-     * @return      whether n is found in the BST
+     *
+     * @param n the number to be searched for
+     * @return whether n is found in the BST
      */
     public boolean find(Integer n) {
-        if (n.compareTo(v) == 0) { return true; }
-        else if (n.compareTo(v) < 0) { return left.find(n); }
-        else /* n > v */ { return right.find(n); }
+        if (n.compareTo(v) == 0) {
+            return true;
+        } else if (n.compareTo(v) < 0) {
+            return left.find(n);
+        } else /* n > v */ {
+            return right.find(n);
+        }
     }
 
     /**
      * A method to insert a number into a BST.
-     * 
-     * @param  n    the number to be added
-     * @return      a new BST with n (or the same tree, if n is already in the BST)
+     *
+     * @param n the number to be added
+     * @return a new BST with n (or the same tree, if n is already in the BST)
      */
     public BinarySearchTree insert(Integer n) {
         if (n.compareTo(v) == 0) {  // Is n equal to v?
@@ -65,19 +73,22 @@ public class Branch implements BinarySearchTree {
 
     /**
      * A method to find a minimum number in a BST
-     * 
-     * @return      a minimum number in the BST (or -255, if the tree is empty)
+     *
+     * @return a minimum number in the BST (or -255, if the tree is empty)
      */
     public Integer min() {
-        if (left.isLeaf()) { return v; }
-        else { return left.min(); }
+        if (left.isLeaf()) {
+            return v;
+        } else {
+            return left.min();
+        }
     }
 
     /**
      * A method to delete a number from a BST.
-     * 
-     * @param  n    the number to be deleted
-     * @return      a new BST without n (or the same tree, if n is not in the BST)
+     *
+     * @param n the number to be deleted
+     * @return a new BST without n (or the same tree, if n is not in the BST)
      */
     public BinarySearchTree delete(Integer n) {
         if (n.compareTo(v) == 0) {

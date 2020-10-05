@@ -1,6 +1,6 @@
 /**
  * Write a description of class Branch here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200106
  */

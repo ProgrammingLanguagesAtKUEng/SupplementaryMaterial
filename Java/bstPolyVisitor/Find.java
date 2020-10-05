@@ -1,6 +1,6 @@
 /**
  * Write a description of class Find here.
- * 
+ *
  * @author Atsushi Igarashi
  * @version 20200106
  */
