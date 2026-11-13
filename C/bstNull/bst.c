@@ -56,7 +56,7 @@ struct tree *insert(struct tree *t, int n) {
     } else if (n < t->value) {
       return newbranch(insert(t->left, n), t->value, t->right);
     } else /* n > t->value */ {
-      return newbranch(t->right, t->value, insert(t->right, n));
+      return newbranch(t->left, t->value, insert(t->right, n));
     }
   }
 }

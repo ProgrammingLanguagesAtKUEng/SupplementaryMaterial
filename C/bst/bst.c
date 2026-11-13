@@ -78,7 +78,7 @@ struct tree *insert(struct tree *t, int n) {
     } else if (n < b.value) {
       return newbranch(insert(b.left, n), b.value, b.right);
     } else /* n > b.value */ {
-      return newbranch(b.right, b.value, insert(b.right, n));
+      return newbranch(b.left, b.value, insert(b.right, n));
     }
   }
 }
